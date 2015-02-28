@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>技术中心招聘  - 平安陆金所</title>
+    <meta name="keywords" content="融资平台,投资平台,网上投资平台,小额投资平台,小额投资,个人小额投资,网上小额投资,小额投资理财,网上投资理财,投资好项目"/>
+    <meta name="description" content="中国平安陆金所官方网站,是中国平安保险集团股份有限公司旗下成员,在健全的风险管控体系基础上,为中小企业及个人客户提供专业,可信赖的投融资服务,助您财富实现增值!"/>
+    <meta name="keywords" content="$keywords"/>
+    <meta name="description" content="$description"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<img src="images/three.png" class="hidden">
+<div id="iSlider"></div>
+<!-- <script type="text/javascript" src="https://static.lufaxcdn.com/lufax-public/zepto/20140916.zepto.min.js"></script> -->
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/islider_core.js"></script>
+<script>
+    var list = [
+        {
+            'content': '<div class="content home" id="page0"><div class="logo bgImg1"></div><p class="home-invite">技术中心，邀你加入</p><div class="arrow bgImg1"></div><div class="hand bgImg1"></div><div>'
+        },
+        {
+            'content': '<div class="content page1" id="page1">' +
+                    '<p class="page1-intro">陆金所个人投资Lufax网站<br/>拥有近<span>6,000,000</span>注册用户</p>' +
+                    '<p class="cloud1 bgImg1"></p><p class="cloud2 bgImg1"></p><p class="cloud3 bgImg1"></p>' +
+                    '<p class="building1 buildings bgImg1"></p><p class="building2 buildings bgImg1"></p><p class="building3 buildings bgImg1"></p><p class="building4 buildings bgImg1"></p>' +
+                    '<p class="cash"></p><p class="coins coin1"></p><p class="coins coin2"></p><p class="coins coin3"></p><p class="coins coin4"></p><p class="coins coin5"></p><p class="coins coin6"></p> '+
+                    '<p class="sea-wave1"></p><p class="sea-wave2"></p><p class="sea-wave3"></p><p class="sea-wave4"></p>' +
+                    '</div>'
+        },
+        {
+            'content': '<div class="content page2" id="page2">' +
+                    '<p class="page1-intro">成立3年至今<br/><span>100%</span>投资者获取预期收益</p>' +
+                    '<p class="page2-intro">安全 专业 便捷</p>' +
+                    '<p class="cloud1 bgImg1"></p><p class="cloud2 bgImg1"></p><p class="cloud3 bgImg1"></p>' +
+                    '<p class="tree tree-yellow"></p><p class="tree tree-red"></p>' +
+                    '<p class="coins coin1"></p><p class="coins coin2"></p><p class="coins coin3"></p><p class="coins coin4"></p><p class="coins coin5"></p><p class="coins coin6"></p>'+
+                    '<p class="sea-wave1"></p><p class="sea-wave2"></p><p class="sea-wave3"></p><p class="sea-wave4"></p>' +
+                    '</div>'
+        },
+        {
+            'content': '<div class="content page3" id="page3">' +
+                    '<p class="page1-intro">但<br/>这<span>远远不够</span><br/>... ...</p>' +
+                    '<p class="cloud1 bgImg1"></p><p class="cloud2 bgImg1"></p><p class="cloud3 bgImg1"></p>' +
+                    '<p class="sea-wave1 sea-wave"></p><p class="sea-wave2 sea-wave"></p><p class="sea-wave3 sea-wave"></p><p class="sea-wave4 sea-wave"></p>' +
+                    '</div>'
+        },
+        {
+            'content': '<div class="content page4" id="page4">' +
+                    '<p class="page1-intro">互联网金融——平安陆金所<br/>众多互联网相关岗位</p>' +
+                    '<p class="page1-intro2">邀你加入，创造更多</p>' +
+                    '<p class="page1-intro3"><a class="mail" href="mailto:pub_lufaxjobs@pingan.com.cn">pub_lufaxjobs@pingan.com.cn</a></p>' +
+                    '<p class="lds wen"></p><p class="lds girl"></p><p class="lds guang"></p>' +
+                    '<p class="sea-wave1 sea-wave"></p><p class="sea-wave2 sea-wave"></p><p class="sea-wave3 sea-wave"></p><p class="sea-wave4 sea-wave"></p>' +
+                    '</div>'
+        },
+        {
+            'content': '<div class="content page5" id="page5">' +
+                    '<h2>网站产品管理部</h2>' +
+                    '<p class="page1-intro">产品经理（金融产品方向）<br/>产品经理（电商方向）<br/>交互设计师<br/>视觉设计师<br/>... ...</p>' +
+                    '<p class="lds tc-lds girl2"></p><p class="lds round"></p><p class="ico ico1"></p><p class="ico ico2"></p><p class="ico ico3"></p> ' +
+                    '</div>'
+        },
+        {
+            'content': '<div class="content page5 page6" id="page6">' +
+                    '<h2>系统开发部</h2>' +
+                    '<p class="page1-intro">研发工程师（Java）<br/>测试工程师<br/>前端开发工程师<br/>系统架构师<br/>应用架构师<br/>... ...</p>' +
+                    '<p class="lds tc-lds wen2"></p><p class="lds round"></p><p class="ico ico1"></p><p class="ico ico2"></p><p class="ico ico3"></p>' +
+                    '</div>'
+        },
+        {
+            'content': '<div class="content page5 page7" id="page7">' +
+                    '<h2>移动产品开发部</h2>' +
+                    '<p class="page1-intro">Mobile HTML5 前端工程师<br/>移动测试工程师<br/>Android 高级工程师<br/>iOS 高级工程师<br/>移动HTML5 产品经理<br/>... ...</p>' +
+                    '<p class="lds tc-lds guang2"></p><p class="lds round"></p><p class="ico ico1"></p><p class="ico ico2"></p><p class="ico ico3"></p>' +
+                    '</div>'
+        },
+        {
+            'content': '<div class="content page5 page8" id="page8">' +
+                    '<h2>加入我们   完成梦想</h2>' +
+                    '<p class="page1-intro">更多技术中心招聘信息请见<br/> www.lufax.com/job</p>' +
+                    '<p class="three"></p>' +
+                    '<p class="share-word">分享</p><p class="share-icon"></p><p class="share-shadow"></p>' +
+                    '<div class="logo bgImg1"></div>' +
+                    '</div>'
+        }
+    ];
+    var islider = new iSlider({
+        data: list,
+        type: 'dom',
+        dom: document.getElementById("iSlider"),
+        duration: 1000,
+        isLooping: false,
+        isAutoPlay: false,
+        initIndex: 0,
+        onslideend: function () {
+            var curDom = '#page' + this.slideIndex;
+            $(curDom).parent().addClass('on').siblings().removeClass('on');
+            if (this.slideIndex >= 5) {
+                $('body').addClass('bodyon');
+            } else {
+                $('body').removeClass('bodyon');
+            }
+        }
+    });
+
+
+</script>
+</body>
+</html>
